@@ -3,8 +3,6 @@ jQuery(function($){
     var owl = $('#slider');
     if(owl.length){
         
-        console.log('owl set');
-        
         owl.owlCarousel({
             items:1,
             navigation:false,
