@@ -1,0 +1,26 @@
+.page-template-page-forside-php #content .page-title{    
+    max-width: 1000px;
+    margin:auto;
+    padding:20px 10px 10px;
+    box-sizing: border-box;
+}
+
+#more-news{
+
+    display: block;
+    text-align: center;
+    padding: 15px 0px;
+    background: #444;
+    margin: 10px;
+    box-sizing: border-box;
+    transition:background .2s, color .2s;
+    @include img-shadow;
+    border-radius: 2px;
+    
+    
+    &:hover{
+        background:$blue;
+        color:white;
+    }
+    
+}

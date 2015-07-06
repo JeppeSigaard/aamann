@@ -1,0 +1,236 @@
+#serviceaftaler{
+    
+    display: block;
+    margin:-10px;
+    
+    >li{
+        
+        padding:10px;
+        box-sizing: border-box;
+        display: block;
+        cursor: default;
+        transition:transform .3s;
+        backface-visibility: hidden;
+        width:100%;
+        margin-bottom: 40px;
+        
+        &:hover{
+            transform: scale(1.01);
+            
+            >div{
+            
+                @include img-shadow;
+            }
+        }
+        
+        >div{
+            
+            padding:0px 0px 70px 0px;
+            background:#333;
+            box-sizing: border-box;
+            position: relative;
+            border:10px solid #363636;
+            @include img-shadow-small;
+            transition: box-shadow .3s ;
+        
+            >h3{
+                
+                background:$blue;
+                text-align: center;
+                height:70px;
+                line-height: 70px;
+                color:white;
+                text-transform: uppercase;
+                font-size:1.2rem;
+                font-weight:bold;
+
+
+            }
+
+            >div.sa-price{
+                
+                height:70px;
+                line-height:70px;
+                text-align: center;
+                background:#303030;
+
+
+                >.dkk{
+                    
+                    font-size:16px;
+                    vertical-align: top;
+                    margin-top:-10px;
+                    display: inline-block;
+
+                }
+
+                >.nmb{
+                    
+                    font-size:3rem;
+                    color:$blue;
+                    display: inline-block;
+
+                }
+
+                >.prmd{
+                    
+                    font-size:16px;
+                    vertical-align: bottom;
+                    display: inline-block;
+
+                }
+            }
+
+            >ul.sa-options{
+
+
+
+                >li{
+                    
+                    display: block;
+                    padding:20px;
+                    background:#333;
+                    border:1px solid #252525;
+                    box-sizing: border-box;
+                    border-top: 0;
+                    
+
+                } 
+            }
+
+            >div.sa-action{
+
+                position: absolute;
+                bottom: 0px;
+                height: 70px;
+                line-height: 50px;
+                text-align: center;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+                border:1px solid #252525;
+                transition:background .3s;
+                
+                &:hover{
+                    background:#353535;
+                }
+                
+                >a{
+                    
+                    position:relative;
+                    display:block;
+                    background:$blue;
+                    color:white;
+                    transition:background .2s, color .2s;
+                    font-weight: bold;
+                    text-transform:uppercase;
+
+                    &:hover{
+                        
+                        box-shadow: 0px 0px 3px rgba(0,0,0,.4);
+                        color:$grey-1;
+                        background:white;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+#bestillingsform.active{
+    margin:50px 0px 50px;
+    opacity:1;
+    padding:20px 40px 60px;
+    box-sizing: border-box;
+    overflow:auto;
+    @include img-shadow;
+    background:$blue;
+    height:auto;
+    overflow: auto;
+    line-height:0;
+}
+#bestillingsform{
+    
+    .loading{
+        background:transparent url(images/formload.gif) no-repeat center;
+        height:50px;
+    }
+
+    
+    margin:60px 0px 50px;
+    height:0;
+    opacity:0;
+    width:100%;
+    overflow: hidden;
+    transition:margin .5s, opacity .5s;
+    
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 20px;
+    }
+    
+    >p{
+        color:white;
+        display: block;
+        margin:0px 0px 20px;
+        line-height: 1.4;
+        text-align: center;
+    }
+        
+    input, textarea{
+        display: block;
+        width: 100%;
+        padding: 10px 7px;
+        box-sizing: border-box;
+        display: block;
+        margin: 5px 0px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) inset;
+        background: rgba(255, 255, 255, 0.8);
+        outline-color: rgba(100, 100, 100, 0.1);
+        font-size: 13px;
+        resize: none;
+    }
+    
+    input.error, textarea.error{
+        background-color: rgb(250, 255, 189);
+    }
+    
+    textarea{
+        height:150px;
+    }
+    
+    a{
+        display:block;
+        padding:20px 0px;
+        line-height: 1;
+        color:white;
+        box-sizing: border-box;
+        text-align: center;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        border-right: 2px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    
+}
+
+@media(min-width:800px){
+
+    
+    #serviceaftaler{
+        display: flex;
+    
+        >li{
+            margin-bottom: 0;
+            display: flex;
+            width:auto;
+        }
+    }
+    
+}

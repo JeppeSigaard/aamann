@@ -1,0 +1,23 @@
+#main {
+    
+    #searchform{
+        
+        padding:20px;
+        background:$grey-0;
+        @include img-shadow-small;
+        border:5px solid #353535;
+        
+
+        #s{
+            background:$grey-2;
+            border:none;
+            padding:7px 10px;
+            width: 100%; 
+            box-sizing: border-box;
+            font-size:15px;
+            color:white;
+
+        }
+        
+    }
+}

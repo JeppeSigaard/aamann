@@ -1,0 +1,54 @@
+#side-menu{
+    
+    h4{
+        
+        transition: background .2s, color .2s, padding .2s;
+        display: block;
+        padding:15px 10px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,.2) inset;
+        border-bottom:1px solid $grey-2;
+        font-weight:bold;
+        
+        &:hover{
+            background:$blue;
+            color:white;
+            padding:15px 5px 15px 15px;
+        }    
+    }
+    
+    ul{
+        
+        
+        li{
+            
+    
+            a{
+            
+                background:$grey-0;
+                padding:15px 10px;
+                color:$grey-5;
+                display: block;
+                border-bottom:1px solid $grey-2;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 3px rgba(0,0,0,.2) inset;
+                
+                transition: background .2s, color .2s, padding .2s;
+                
+                &:hover{
+                    background:$blue;
+                    color:white;
+                    padding:15px 5px 15px 15px;
+                }
+            }
+        }
+    }
+    
+    ul li.current_page_item a, ul li.current_page_item a:hover, h4.active, ul li a.active{
+            
+            background:rgba(255,255,255,.3);
+            color:$grey-2;
+            cursor:default;
+            padding:15px 10px;
+        
+        }
+}

@@ -1,0 +1,134 @@
+#ledige-stillinger{
+
+    li{
+        >a{
+            display: block;
+            background:$blue;
+            color:white;
+            padding:10px 10px 10px 0px;
+            transition:background .2s, color .2s;
+            font-size:20px;
+            line-height:30px;
+            
+            
+            &:before{
+                display:inline-block;
+                float:left;
+                width:40px;
+                height:100%;
+                content:'+';
+                text-align:center;
+            }
+            
+            &:hover, &.active{
+                background:white;
+                color:$grey-0;
+            }
+            
+            &.active:before{
+                content:'-';
+            }
+            
+            
+        }
+        
+        
+        
+        >div{
+            max-height: 0px;
+            transition: max-height 0.15s ease-in;
+            overflow: hidden;
+            margin-bottom:0px;
+            
+            a{
+                color:$blue;
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        
+            line-height: 1.4rem;
+            padding-top: 20px;
+            
+            h1{
+                font-size:28px;
+                line-height:36px;
+                margin-bottom:10px;
+                color:white;
+                
+            }
+            
+            h2{
+                font-size: 24px;
+                line-height:32px;
+                 margin-bottom:10px;
+                color:white;
+            }
+            
+            h3{
+                font-size: 20px;
+                line-height:28px;
+                 margin-bottom:10px;
+                color:white;
+            }
+            
+            h4{
+                font-size: 18px;
+                line-height:24px;
+                 margin-bottom:10px;
+                color:white;
+            }
+            
+            h5{
+                font-size:16px;
+                line-height:22px;
+                 margin-bottom:10px;
+                font-weight:bold;
+                color:white;
+            }
+            
+            h6{
+                font-style: italic;
+                margin-bottom:10px;
+            }
+            
+            p{
+                margin-bottom:20px;
+                line-height: 1.4;
+            }
+            
+            ul{
+                list-style:disc;
+                padding-left:20px;
+                
+                li{
+                    margin-bottom:5px;
+                }
+            }
+            
+            ol{
+                list-style:decimal;
+                padding-left:20px;
+                
+                li{
+                    margin-bottom:5px;
+                }
+            }
+            
+            strong{
+                font-weight:bold;
+            }
+            
+        }
+           
+        
+        div.active{
+            max-height: 1200px;
+            transition: max-height 0.45s ease-in;
+            margin-bottom:50px;
+            
+        }
+    }
+
+}

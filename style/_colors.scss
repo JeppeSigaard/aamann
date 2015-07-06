@@ -1,0 +1,17 @@
+$grey-0:    #29292a;
+$grey-1:    #3e3e3e;
+$grey-2:    #403f3f;
+$grey-4:    #747474;
+$grey-5:    #797979;
+$grey-6:    #aaa9a9;
+
+$blue:          rgb(26, 128, 182);
+$blue-trans:    rgba(26, 128, 182,.7);
+
+@mixin img-shadow(){
+    box-shadow:0px 2px 10px rgba(0,0,0,.5);
+}
+
+@mixin img-shadow-small(){
+    box-shadow:0px 2px 5px rgba(0,0,0,.3);
+}
