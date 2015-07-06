@@ -35,6 +35,44 @@ function smartmonkey_widgets_init()
         'after_title' => '</h3>',
     ) );
 
+    
+    
+    register_sidebar( array (
+        'name' => __( 'Footer 1', 'smartmonkey' ),
+        'id' => 'footer-widget-area-1',
+        'before_widget' => '',
+        'after_widget' => "",
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+    
+    register_sidebar( array (
+        'name' => __( 'Footer 2', 'smartmonkey' ),
+        'id' => 'footer-widget-area-2',
+        'before_widget' => '',
+        'after_widget' => "",
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+    
+    register_sidebar( array (
+        'name' => __( 'Footer 3', 'smartmonkey' ),
+        'id' => 'footer-widget-area-3',
+        'before_widget' => '',
+        'after_widget' => "",
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+    
+    register_sidebar( array (
+        'name' => __( 'Footer 4', 'smartmonkey' ),
+        'id' => 'footer-widget-area-4',
+        'before_widget' => '',
+        'after_widget' => "",
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
 }
 
 

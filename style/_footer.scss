@@ -3,7 +3,7 @@
     overflow: auto;
     border-top:10px solid $grey-1;
     
-    div{
+    >div{
         max-width:960px;
         margin:auto;
         padding:0px 0px 40px;
@@ -59,7 +59,7 @@
     
     #footer{
         
-        div{
+        >div{
         
             .footer-column {
                 width: 50%;
