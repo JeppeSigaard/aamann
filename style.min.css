@@ -899,30 +899,11 @@ section#content {
         line-height: 36px;
         margin-bottom: 10px;
         color: white; }
-      section#content #main article h2 {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 10px;
-        color: white; }
-      section#content #main article h3 {
-        font-size: 20px;
-        line-height: 28px;
-        margin-bottom: 10px;
-        color: white; }
-      section#content #main article h4 {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 10px;
-        color: white; }
-      section#content #main article h5 {
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: white; }
-      section#content #main article h6 {
-        font-style: italic;
-        margin-bottom: 10px; }
+      section#content #main article h2, section#content #main article h3, section#content #main article h4, section#content #main article h5, section#content #main article h6 {
+        margin-bottom: 20px;
+        line-height: 1.4;
+        color: white;
+        font-weight: bold; }
       section#content #main article p {
         margin-bottom: 20px;
         line-height: 1.4; }
@@ -1960,6 +1941,14 @@ div.dark_rounded #pp_full_res .pp_inline, div.dark_square #pp_full_res .pp_inlin
         /*width:195%;*/
         width: 100%;
         max-width: none; }
+      #slide-container > div #slider .slide-text {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        color: white; }
     #slide-container > div #slidectrl {
       top: 50%;
       left: 0;

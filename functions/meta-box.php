@@ -8,6 +8,7 @@ function smamo_add_boxes(){
     require 'meta-box/medarbejdere.php';
     require 'meta-box/serviceaftale.php';
     require 'meta-box/billedslider.php';
+    require 'meta-box/slides.php';
     
 return $mb;
 

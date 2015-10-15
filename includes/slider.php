@@ -13,7 +13,11 @@
         foreach($slides as $slide){
 
             $slide_img = wp_get_attachment_image_src( get_post_thumbnail_id($slide->ID), 'slides' );
+            $slide_text = apply_filters('the_content',$slide->post_content);
+            echo '<div class="slide">';
             echo '<img src="'.$slide_img[0].'"/>';
+            if ($slide_text !== '') {echo '<div class="slide-text">'.$slide_text.'</div>';}
+            echo '</div>';
         }
 
         ?>

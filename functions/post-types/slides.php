@@ -15,7 +15,7 @@ function smamo_add_slides() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 23,
-		'supports'           => array( 'title', 'thumbnail'),
+		'supports'           => array( 'title', 'thumbnail', 'editor'),
         'labels'             => array(
             
             'name'               => _x( 'Slideshow', 'post type general name', 'smamo' ),
